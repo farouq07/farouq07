@@ -22,7 +22,7 @@ local Bytex = {
 
 ]]--
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/jetray-files/reanimate-for-new-beta-silly/refs/heads/main/lib.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bytexlol/bytexreanimation/refs/heads/main/lib.lua"))()
 
 local bytexgui = Library:create{
     Theme = Library.Themes.Dark,
@@ -109,7 +109,7 @@ function Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatL
             end
         end
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/farouq07/farouq07/refs/heads/main/reanimate"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jetray-files/ByteWare.-Bytex-/refs/heads/main/reanimate"))()
         
         wait(0.5)
         if Bytex.UseHats then
@@ -232,7 +232,7 @@ local Global = (getgenv and getgenv()) or shared
             end
         end
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/farouq07/farouq07/refs/heads/main/reanimate"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jetray-files/ByteWare.-Bytex-/refs/heads/main/reanimate"))()
         
         wait(0.5)
         bytexgui:Notification{
@@ -600,6 +600,49 @@ scr:button({
         runScript('knife')
     end,
 })
+
+scr:button({
+
+    Name = "Rocket Launcher",
+
+    Callback = function()
+        local BytexConvert_HatID = 86195639625389
+        local BytexConvert_HatCFrame = CFrame.new(0, -1.5, -0.7) * CFrame.Angles(math.rad(90), math.rad(90), math.rad(0))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
+
+        runScript('Rocket')
+    end,
+})
+
+scr:button({
+    Name = "john doe",
+    Callback = function()
+        local BytexConvert_HatID = 122293866267553
+        local BytexConvert_HatCFrame = CFrame.new(0.3, -0.5, -0) * CFrame.Angles(math.rad(0), math.rad(0) , 0)
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        local Bytex_ExtraHats = "88189987572253, 102093976550242, 18196403126"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, false, nil, nil, Bytex_ExtraHats)
+        runScript('Johny')
+    end,
+})
+
+scr:button({
+    Name = "test",
+    Callback = function()
+        local BytexConvert_HatID = 121801845895213
+        local BytexConvert_HatCFrame = CFrame.new(0., -0.5, -1) * CFrame.Angles(math.rad(180), math.rad(0) , 0)
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        local Bytex_ExtraHats = "0"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, false, nil, nil, Bytex_ExtraHats)
+        runScript('test')
+    end,
+})
 --[[
 
     //  EXTRA  \\
@@ -608,7 +651,7 @@ scr:button({
 
 bytexgui:Notification{
     Title = "Welcome to Bytex!",
-    Text = "Scripts and customization converted/made by 2faint. help by coils and ggcocacola",
+    Text = "Scripts and customization converted/made by 2faint. help by coils",
     Duration = 5,
 }
 
